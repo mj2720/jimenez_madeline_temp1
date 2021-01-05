@@ -1,4 +1,9 @@
 while (true) {
-    console.log("Temperature(F):" + input.temperature(TemperatureUnit.Fahrenheit))
-    console.log("Python is fun.")
+    console.log("Light level:" + input.lightLevel())
+    if (input.lightLevel() > 20) {
+        light.showAnimation(light.rainbowAnimation, 5000)
+    } else {
+        light.clear()
+    }
+    
 }
