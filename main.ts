@@ -1,9 +1,8 @@
 while (true) {
-    console.log("Light level:" + input.lightLevel())
-    if (input.lightLevel() > 20) {
-        light.setAll(light.rgb(255, 215, 0))
+    if (input.soundLevel() > 110) {
+        light.setAll(color.rgb(128, 0, 128))
     } else {
-        light.clear()
+        Sounds.Siren
     }
     
 }
